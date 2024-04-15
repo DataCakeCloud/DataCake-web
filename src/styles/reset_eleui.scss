@@ -1,0 +1,176 @@
+// 默认背景色是白色的，修改为透明
+.el-tree {
+  background: transparent;
+}
+.el-input__inner {
+  // background: transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// 分页的背景色默认是灰色的，修改为白色
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .el-pager li {
+  background: #fff;
+}
+// 时间选择器宽度
+.el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+  width: auto;
+}
+// 文字按钮右边距修改
+.el-table td .el-button.el-button--text {
+  margin-right: 0;
+}
+
+.el-tooltip__popper {
+  max-width: 700px;
+}
+// 去掉按钮最小宽度
+.el-button--small {
+  padding: 7px 16px;
+  min-width: auto !important;
+}
+.el-table .cell {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.el-date-editor .el-range-separator {
+  width: 24px;
+}
+.el-date-editor.el-date-editor--daterange .el-range-separator {
+  width: 24px;
+}
+// 修改带边框的表格 竖边框改为白色
+.el-table--border th,
+.el-table--border td {
+  border-right: 1px solid #fff !important;
+}
+.el-table.el-table--border th {
+  border-top: 1px solid #e2e9f3 !important;
+}
+.el-table--border::after {
+  background-color: #fff !important;
+}
+
+// cascader 设置最大宽度
+.el-cascader__dropdown {
+  max-width: 90% !important;
+  overflow-x: auto !important;
+}
+
+.custom-popper {
+  .el-scrollbar {
+    .el-select-dropdown__item {
+      white-space: normal;
+      height: auto;
+      line-height: 20px;
+      border-bottom: 1px solid #dadfeb;
+      padding: 5px 20px;
+    }
+  }
+}
+// el-tree 设置横向滚动条
+.el-tree {
+  display: inline-block;
+  min-width: 100%;
+}
+.el-textarea.is-disabled .el-textarea__inner {
+  color: #445782;
+}
+// 时间选择器只显示小时
+.time-hour .el-time-spinner__wrapper {
+  width: 100% !important;
+}
+.time-hour .el-scrollbar:nth-of-type(2) {
+  display: none !important;
+}
+// 整体分页字体调小
+.el-pagination.is-background {
+  span:not([class*='suffix']),
+  button {
+    font-size: $global-font-size-12;
+  }
+  .el-pagination__sizes .el-input .el-input__inner {
+    font-size: $global-font-size-12;
+    height: 26px;
+  }
+  .el-pagination__jump .el-input__inner {
+    background: transparent;
+  }
+  .el-select .el-input {
+    width: 90px;
+    margin: 0;
+  }
+  .btn-prev,
+  .btn-next,
+  .el-pager li {
+    min-width: 26px;
+    margin-top: 1px;
+  }
+  .btn-prev,
+  .btn-next {
+    height: 26px;
+  }
+  ul li {
+    height: 26px;
+    line-height: 26px;
+    font-size: $global-font-size-12;
+  }
+  .el-pager .more::before {
+    line-height: 26px;
+  }
+  .el-pagination__jump {
+    height: 26px !important;
+    line-height: 26px !important;
+    margin-top: 1px;
+  }
+  .el-input--small {
+    font-size: $global-font-size-12;
+  }
+}
+// dialog body上边距
+.el-dialog__body {
+  padding-top: 10px;
+}
+.el-select-dropdown {
+  max-width: 400px;
+  // overflow-x: auto;
+  // overflow: hidden;
+  // .el-select-dropdown__item {
+  //   overflow: inherit;
+  // width: 100%;
+  // &:hover {
+  //   animation: marquee-wrap 4s infinite linear;
+  // }
+  // span {
+  //   float: left;
+  //   white-space: nowrap;
+  //   min-width: 100%;
+  //   &:hover {
+  //     animation: marquee-content 8s infinite linear;
+  //   }
+  // }
+  // }
+}
+@keyframes marquee-wrap {
+  0%,
+  30% {
+    transform: translateX(0);
+  }
+  70%,
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes marquee-content {
+  0%,
+  30% {
+    transform: translateX(0);
+  }
+  70%,
+  100% {
+    transform: translateX(-100%);
+  }
+}

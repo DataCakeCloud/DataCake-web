@@ -1,0 +1,62 @@
+// 公共class
+// search-form : 搜索表单样式
+.el-form--inline {
+  margin-bottom: 16px;
+  padding: 16px 16px 8px;
+  background: rgba(247, 249, 255, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(226, 233, 243, 1);
+  box-sizing: border-box;
+  .el-form-item {
+    margin-right: 4px;
+    margin-bottom: 8px;
+    .el-form-item__content {
+      height: 32px;
+      & > .el-input,
+      .el-select {
+        width: 184px;
+      }
+      .el-button {
+        width: unset;
+        float: left;
+        margin-left: 0;
+        margin-right: 8px;
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+      .el-date-editor.el-date-editor--datetimerange {
+        width: 376px;
+      }
+    }
+  }
+}
+
+// 单独表单页 表单class
+// .form-theme {
+//   overflow: hidden;
+//   .el-form-item {
+//     margin-bottom: 16px;
+//     .el-form-item__label {
+//       font-weight: 500;
+//       color: $color-c1;
+//       width: 30%;
+//       padding-right: 0;
+//     }
+//     .el-form-item__content {
+//       width: 50%;
+//       max-width: 640px;
+//       margin-left: calc(30% + 24px);
+//       color: $color-c1;
+//       box-sizing: border-box;
+//       .el-button {
+//         margin-left: 0;
+//         margin-right: 4px;
+//         margin-top: 8px;
+//         &:last-child {
+//           margin-right: 0;
+//         }
+//       }
+//     }
+//   }
+// }

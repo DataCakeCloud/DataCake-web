@@ -1,0 +1,97 @@
+$font-family: Helvetica Neue, Helvetica, PingFang SC, Avenir, Segoe UI, Arial, sans-serif, Hiragino Sans GB, Microsoft YaHei;
+$global-font-size-0: 0;
+$global-font-size-10: 10px;
+$global-font-size-12: 12px;
+$global-font-size-13: 13px;
+$global-font-size-14: 14px;
+$global-font-size-15: 15px;
+$global-font-size-16: 16px;
+$global-font-size-17: 17px;
+$global-font-size-18: 18px;
+$global-font-size-19: 19px;
+$global-font-size-20: 20px;
+$global-font-size-21: 21px;
+$global-font-size-22: 22px;
+$global-font-size-23: 23px;
+$global-font-size-24: 24px;
+$global-font-size-25: 25px;
+$global-font-size-26: 26px;
+$global-font-size-27: 27px;
+$global-font-size-28: 28px;
+$global-font-size-29: 29px;
+$global-font-size-30: 30px;
+$global-font-size-31: 31px;
+$global-font-size-32: 32px;
+$global-font-size-33: 33px;
+$global-font-size-34: 34px;
+$global-font-size-35: 35px;
+$global-font-size-36: 36px;
+$global-font-size-37: 37px;
+$global-font-size-38: 38px;
+$global-font-size-39: 39px;
+$global-font-size-40: 40px;
+$global-font-size-41: 41px;
+$global-font-size-42: 42px;
+$global-font-size-43: 43px;
+$global-font-size-44: 44px;
+$global-font-size-45: 45px;
+$global-font-size-46: 46px;
+$global-font-size-47: 47px;
+$global-font-size-48: 48px;
+$global-font-size-49: 49px;
+$global-font-size-50: 50px;
+
+$button-min-width: 80px;
+
+$subMenuBg: #1f2d3d;
+
+$color-ca: #6667ab;
+$color-cb: #ff5656;
+$color-cc: #ffa61d;
+$color-cd: #41c143;
+$color-c1: #2c3b5e;
+$color-c2: #445782;
+$color-c3: #93a1c2;
+$color-c4: #d1d7e6;
+$color-c5: #e2e9f3;
+$color-c6: #f7f9ff;
+
+$c-primary: #3782ff;
+$c-nav-primary: $color-ca;
+
+$c-error: $color-cb;
+$c-warn: $color-cc;
+$c-success: $color-cd;
+$c-info: $color-c3;
+
+$c-title: $color-c1;
+$c-content: $color-c2;
+$c-comment: $color-c3;
+$c-hint: $color-c4;
+$c-divider: $color-c5;
+$c-background: $color-c6;
+
+$s-navbar-height: 45px;
+
+$c-sidebar-bg: $c-background;
+$c-sidebar-menu-group: $c-comment;
+$c-sidebar-menu-item: $c-content;
+$c-sidebar-menu-item-active: $c-primary;
+$c-sidebar-menu-item-bg-active: mix(#fff, $c-primary, 80%); /** https://github.com/ElemeFE/element/issues/12951 */
+$c-sidebar-menu-item-hover: mix(#fff, $c-sidebar-menu-item-bg-active, 20%);
+
+$s-sidebar-width: 244px;
+$s-sidebar-collapsed-width: 57px;
+
+:export {
+  globalFont: $font-family;
+  navbarHeight: $s-navbar-height;
+  menuText: $c-sidebar-menu-item;
+  menuActiveText: $c-sidebar-menu-item-active;
+  subMenuActiveText: $c-sidebar-menu-item-active;
+  menuBg: $c-sidebar-bg;
+  menuHover: $c-sidebar-menu-item-hover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $c-sidebar-menu-item-hover;
+  sideBarWidth: $s-sidebar-width;
+}

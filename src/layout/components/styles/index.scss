@@ -1,0 +1,323 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+// @import './commonClass.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: $font-family;
+  font-size: $global-font-size-14;
+  // color: $color-c4;
+}
+
+.font-size-12 {
+  font-size: $global-font-size-12;
+}
+.font-size-13 {
+  font-size: $global-font-size-13;
+}
+.font-size-14 {
+  font-size: $global-font-size-14;
+}
+.font-size-15 {
+  font-size: $global-font-size-15;
+}
+.font-size-16 {
+  font-size: $global-font-size-16;
+}
+.font-size-17 {
+  font-size: $global-font-size-17;
+}
+.font-size-18 {
+  font-size: $global-font-size-18;
+}
+.font-size-18 {
+  font-size: $global-font-size-18;
+}
+.font-size-19 {
+  font-size: $global-font-size-19;
+}
+.font-size-20 {
+  font-size: $global-font-size-20;
+}
+.font-size-21 {
+  font-size: $global-font-size-21;
+}
+.font-size-22 {
+  font-size: $global-font-size-22;
+}
+.font-size-23 {
+  font-size: $global-font-size-23;
+}
+.font-size-24 {
+  font-size: $global-font-size-24;
+}
+.font-size-25 {
+  font-size: $global-font-size-25;
+}
+.font-size-26 {
+  font-size: $global-font-size-26;
+}
+.font-size-27 {
+  font-size: $global-font-size-27;
+}
+.font-size-28 {
+  font-size: $global-font-size-28;
+}
+.font-size-29 {
+  font-size: $global-font-size-29;
+}
+.font-size-30 {
+  font-size: $global-font-size-30;
+}
+.font-size-31 {
+  font-size: $global-font-size-31;
+}
+.font-size-32 {
+  font-size: $global-font-size-32;
+}
+.font-size-33 {
+  font-size: $global-font-size-33;
+}
+.font-size-34 {
+  font-size: $global-font-size-34;
+}
+.font-size-35 {
+  font-size: $global-font-size-35;
+}
+.font-size-36 {
+  font-size: $global-font-size-36;
+}
+.font-size-37 {
+  font-size: $global-font-size-37;
+}
+.font-size-38 {
+  font-size: $global-font-size-38;
+}
+.font-size-39 {
+  font-size: $global-font-size-39;
+}
+.font-size-40 {
+  font-size: $global-font-size-40;
+}
+.font-size-41 {
+  font-size: $global-font-size-41;
+}
+.font-size-42 {
+  font-size: $global-font-size-42;
+}
+.font-size-43 {
+  font-size: $global-font-size-43;
+}
+.font-size-44 {
+  font-size: $global-font-size-44;
+}
+.font-size-45 {
+  font-size: $global-font-size-45;
+}
+.font-size-46 {
+  font-size: $global-font-size-46;
+}
+.font-size-47 {
+  font-size: $global-font-size-47;
+}
+.font-size-48 {
+  font-size: $global-font-size-48;
+}
+.font-size-49 {
+  font-size: $global-font-size-49;
+}
+.font-size-50 {
+  font-size: $global-font-size-50;
+}
+
+.global-color-ca {
+  color: $c-primary;
+}
+.global-color-cb {
+  color: $color-cb;
+}
+.global-color-cc {
+  color: $color-cc;
+}
+.global-color-cd {
+  color: $color-cd;
+}
+.global-color-c1 {
+  color: $color-c1;
+}
+.global-color-c2 {
+  color: $color-c2;
+}
+.global-color-c3 {
+  color: $color-c3;
+}
+.global-color-c4 {
+  color: $color-c4;
+}
+.global-color-c5 {
+  color: $color-c5;
+}
+.global-color-c6 {
+  color: $color-c6;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:visited,
+a:hover {
+  cursor: pointer;
+  color: $c-primary;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-family;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+
+/** some common style **/
+.mt10 {
+  margin-top: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+
+.lh32 {
+  line-height: 32px;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+.flex-1 {
+  flex: 1;
+  -webkit-flex: 1;
+}
+.space-between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+//main-container全局样式
+.app-main {
+  min-height: calc(100vh - #{$s-navbar-height});
+  width: 100%;
+  min-width: 856px;
+  position: relative;
+  overflow: hidden;
+  top: $s-navbar-height;
+}
+.hideNavbar {
+  .app-main {
+    top: 0;
+  }
+}
+
+/* ****************************** 全局修改滚动条样式 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #ebeef5;
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(55, 130, 255, 0.6);
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.invisible.scrollbar.horizontal.fade,
+.visible.scrollbar.horizontal {
+  height: 5px !important;
+}
+.invisible.scrollbar.horizontal.fade:hover,
+.visible.scrollbar.horizontal:hover {
+  background: rgba(55, 130, 255, 0.6) !important;
+}
+.invisible.scrollbar.vertical.fade,
+.visible.scrollbar.vertical,
+.decorationsOverviewRuler {
+  width: 5px !important;
+}
+.invisible.scrollbar.vertical.fade:hover,
+.visible.scrollbar.vertical:hover,
+.decorationsOverviewRuler:hover {
+  background: rgba(55, 130, 255, 0.6) !important;
+}
