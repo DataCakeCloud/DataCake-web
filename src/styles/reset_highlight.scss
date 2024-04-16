@@ -1,0 +1,102 @@
+/*
+使用了Monokai Sublime的黑色主题皮肤，但是还存在样式冲突，需要自己修改
+这个样式只适合使用makedown编写的博客
+Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+*/
+
+pre {
+  /*控制代码不换行*/
+  white-space: normal;
+  word-wrap: normal;
+}
+
+.cnblogs-markdown .hljs {
+  display: block;
+  overflow: auto;
+  padding: 1.3em 2em !important;
+  font-size: 16px !important;
+  background: #272822 !important;
+  color: #fff !important;
+  max-height: 700px;
+}
+
+.hljs,
+.hljs-tag,
+.hljs-subst {
+  color: #f8f8f2 !important;
+}
+
+.hljs-strong,
+.hljs-emphasis {
+  color: #a8a8a2 !important;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+  color: #df3079 !important;
+}
+
+.hljs-code,
+.hljs-title,
+.hljs-section,
+.hljs-selector-class {
+  color: #f22c3d !important;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-attr {
+  color: #2e95d3 !important;
+}
+
+.hljs-symbol,
+.hljs-attribute {
+  color: #66d9ef !important;
+}
+
+.hljs-params,
+.hljs-class .hljs-title {
+  color: #f8f8f2 !important;
+}
+
+.hljs-string,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-variable {
+  color: #00a67d !important;
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+  color: hsla(0, 0%, 100%, 0.5) !important;
+}
+
+/* 黑色主题makedown代码结束 */
+/*makedown行间代码样式 */
+.cnblogs-markdown code {
+  color: #fff;
+  border: none !important;
+  font-size: 1em !important;
+  background-color: #f9f2f4 !important;
+  font-family: sans-serif !important;
+}

@@ -1,0 +1,70 @@
+::v-deep .el-tabs__header {
+  margin: 0 70px 15px 0;
+}
+::v-deep .tabs .el-tabs__header {
+  margin: 0 255px 15px 0;
+}
+::v-deep .el-divider--horizontal {
+  margin: 10px 0;
+}
+::v-deep .el-tab-pane {
+  min-height: 300px;
+}
+.tool {
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  z-index: 1005;
+}
+.table-module {
+  position: relative;
+  margin-top: 20px;
+  // min-height: 768px;
+}
+.table-title {
+  height: 80px;
+  align-items: center;
+}
+.table-list {
+  display: flex;
+  align-items: center;
+  .table-name {
+    flex: 1;
+  }
+  .table-owner {
+    flex: 0 0 100px;
+  }
+  .table-visite-times {
+    flex: 0 0 100px;
+  }
+
+  .table-id {
+    flex: 0 0 80px;
+  }
+  .table-start-time {
+    flex: 1;
+  }
+  .table-run-time {
+    flex: 0 0 120px;
+  }
+  .table-times {
+    flex: 0 0 120px;
+  }
+  .table-icon {
+    flex: 0 0 50px;
+    &::before {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      content: '';
+      background: url(~@/assets/view/right.png) no-repeat;
+      background-size: cover;
+    }
+
+    &.table-title-icon {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

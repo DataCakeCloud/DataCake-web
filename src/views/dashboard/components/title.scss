@@ -1,0 +1,23 @@
+.title {
+  position: relative;
+  .item {
+    font-size: $global-font-size-16;
+    font-weight: 500;
+  }
+  &.dy-state {
+    .item {
+      &::after {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-left: 5px;
+        content: '🔥';
+      }
+    }
+  }
+  ::v-deep .el-tag {
+    position: absolute;
+    top: -5px;
+    right: -2px;
+  }
+}

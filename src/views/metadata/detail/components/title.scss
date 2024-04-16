@@ -1,0 +1,18 @@
+.detial-item {
+  .tool {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    .tool-lf {
+      .title {
+        height: 1.8em;
+        line-height: 1.8em;
+        font-weight: 550;
+        padding-left: 10px;
+        position: relative;
+        border-left: 3px solid $c-primary;
+      }
+    }
+  }
+}

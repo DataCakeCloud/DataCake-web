@@ -1,0 +1,27 @@
+.task-state {
+  &.waiting {
+    background-color: #d7bdf2 !important;
+  }
+  &.termination {
+    background-color: #f10d15 !important;
+  }
+  &.waiting_queue {
+    background-color: #87e0f0 !important;
+  }
+  &.running {
+    // background-color: #51fe00 !important;
+    background-color: $c-primary !important;
+  }
+  &.up_for_retry {
+    background-color: #f8d20e !important;
+  }
+  &.failed {
+    background-color: #f10d15 !important;
+  }
+  &.success {
+    background-color: #15cf66 !important;
+  }
+  &.no_status {
+    background-color: #fff !important;
+  }
+}
